@@ -19,4 +19,9 @@ public class QuestionService {
     public List<Question> getAllQuestionByCategory(String category) {
         return  questionsDao.findByCategory(category);
     }
+
+    public String addQuestion(Question question) {
+         questionsDao.save(question);
+        return "Question added successfully";
+    }
 }
