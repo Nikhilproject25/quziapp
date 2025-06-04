@@ -10,5 +10,5 @@ import java.util.List;
 public interface QuestionsDao extends JpaRepository<Question, Integer> {
 
 
-    //List<Question> findByCategory(String category);
+    List<Question> findByCategory(String category);
 }

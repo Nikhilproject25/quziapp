@@ -22,9 +22,9 @@ public class QuestionController {
         return questionService.getAllQuestions();
     }
 
-    /*@GetMapping("{category}")
+    @GetMapping("{category}")
     public List<Question> getQuestionsByCategory(@PathVariable String category) {
         return questionService.getAllQuestionByCategory(category);
-    }*/
+    }
 
 }
